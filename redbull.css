@@ -1,0 +1,93 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    background-color: rgb(7, 7, 74);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+img{
+    width: 100%;
+}
+
+/*nav flex stuff*/
+#flexnav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* MR REDCAY - add padding to buttons */
+.flexitem{
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+/*nav flex stuff*/
+#flexbody{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+article{
+    flex: 0 0 vw;
+    order: 1;
+    padding: 10px 60px;
+    background-color: white;
+}
+
+section{
+    flex: 1;
+    order: 2;
+    padding: 20px;
+    background-color: white;
+}
+
+aside{
+    flex: 0 0 43vw;
+    order: 1;
+    padding: 20px;
+    background-color: white;
+}
+
+footer{
+    background-color: rgb(7, 7, 74);
+    color: aliceblue;
+}
+
+h2{
+    color: #dd0747;
+    font-size: 2em;
+}
+
+/*links*/
+a:link{
+    color: aliceblue;
+/* MR REDCAY - removes lines under buttons */
+    text-decoration: none;
+}
+
+a:visited{
+    color: gold;
+}
+
+a:hover{
+    background-color: #dd0747;
+    color: gold;
+}
+
+a:active{
+    background-color: #dd0747;
+}
+
+.selected{
+    background-color: #dd0747;
+    color: gold;
+}
+
+/*phone setup*/
+@media (max-width: 600px){
+    #flexbody{
+        flex-direction: column;
+    }
+}

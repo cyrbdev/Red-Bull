@@ -1,0 +1,114 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    background-color: rgb(7, 7, 74);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+img{
+    width: 100%;
+}
+
+/*nav flex stuff*/
+#flexnav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.flexitem{
+    margin: 5px;
+}
+
+/* MR REDCAY - remove bullets from list */
+ul {
+    list-style-type: none;
+
+}
+
+/*nav flex stuff*/
+#flexbody{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+article{
+    flex: 0 0 20vw;
+    order: 1;
+    padding: 20px;
+    background-color: white;
+}
+
+section{
+    flex: 1;
+    order: 1;
+    padding: 20px 20px 20px 0px;
+    background-color: white;
+}
+
+.image{
+    margin: 10px;
+}
+
+aside{
+    flex: 0 0 20vw;
+    order: 1;
+    padding: 20px;
+    background-color: white;
+}
+
+.can img{
+    width: 200px;
+}
+
+footer{
+    background-color: rgb(7, 7, 74);
+    color: aliceblue;
+}
+/* Mobile body flex below */
+@media (max-width: 600px) {
+    #flexbody {
+        flex-direction: column;
+    }
+    .can img{
+        width: 150px;
+    }
+  }
+
+/* MR REDCAY - no space in between a and hover */
+a :hover{
+    background-color: brown;
+    
+}
+
+/*links*/
+a:link{
+    color: aliceblue;
+    text-decoration: none;
+    
+}
+
+a:visited{
+    color: gold;
+}
+
+a:hover{
+    background-color: red;
+    color: gold;
+}
+
+a:active{
+    background-color: red;
+}
+
+.selected{
+    background-color: #dd0747;
+    color: gold;
+}
+
+/*phone setup*/
+@media (max-width: 600px){
+    #flexbody{
+        flex-direction: column;
+    }
+}
